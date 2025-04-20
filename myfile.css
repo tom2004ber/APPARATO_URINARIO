@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'gocciolante';
+    src: url('MeltdownMF.otf');
+}
+.title{
+    font-family: "gocciolante"; 
+	text-align:center;
+	padding-top:50px;
+}
+

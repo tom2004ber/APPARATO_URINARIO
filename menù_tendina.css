@@ -1,0 +1,114 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-family: sans-serif;
+  margin-top: 70px; /* spazio sufficiente per la navbar */  
+  background-image: url('IMAGES/SFONDO.png'); /* usa il nome esatto del file */
+  background-size: cover; /* per coprire tutta la pagina */
+  background-position: center top; /* centra l'immagine */
+  background-repeat: no-repeat; /* evita che si ripeta */
+  background-attachment: fixed; /* resta fisso anche se scorri */
+}
+
+/* NAV BAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px;
+  background-color: #f8f8f8;
+  border-bottom: 2px solid #ccc;
+}
+
+/* LOGO */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #003366;
+  flex: 1;
+}
+
+/* MENU CENTRATO */
+ul.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex: 2;
+}
+
+/* ELEMENTI MENU */
+ul.menu > li {
+  position: relative;
+}
+
+ul.menu > li > a {
+  text-decoration: none;
+  color: #000;
+  padding: 8px 12px;
+  display: block;
+}
+
+/* SUBMENU */
+ul.menu li ul.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  list-style: none;
+  min-width: 160px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+ul.menu li:hover ul.submenu {
+  display: block;
+}
+
+ul.submenu li a {
+  display: block;
+  padding: 6px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+ul.submenu li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* SEARCH FORM A DESTRA */
+.search-form {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.search-form input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+
+.search-form button {
+  padding: 6px 10px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+}
